@@ -6,5 +6,5 @@
    DURATION: 110hrs
    tasks:
    - name: printed varible from prompt level
-    ansible.builtin.debug:
-     msg: "i am learning course is {{COURSE}} and trainer is {{TRAINER}} it will take duration is {{DURATION}}"
+     ansible.builtin.debug:
+      msg: "i am learning course is {{COURSE}} and trainer is {{TRAINER}} it will take duration is {{DURATION}}"
