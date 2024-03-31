@@ -1,0 +1,10 @@
+- name: printed varibles from prompt lavel
+  hosts: mongodb
+  vars_prompt:
+   COURSE: devops
+   TRAINER: swamy
+   DURATION: 110hrs
+  tasks:
+  - name: printed varible from prompt level
+    ansible.builtin.debug:
+     msg: "i am learning course is {{COURSE}} and trainer is {{TRAINER}} it will take duration is {{DURATION}}"
