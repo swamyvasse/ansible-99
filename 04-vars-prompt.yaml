@@ -1,10 +1,10 @@
 - name: printed varible from prompt level
   hosts: mongodb
   vars_prompt:
-  - USERNAME: username
+  - name: USERNAME
     prompt: please enter username
     private: false
-  - PASSWORD: password
+  - name: PASSWORD
     prompt: please enter password
     private: true
     tasks:
