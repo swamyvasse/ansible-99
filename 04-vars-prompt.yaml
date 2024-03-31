@@ -1,10 +1,13 @@
-- name: printed varibles from prompt lavel
+- name: printed varible from prompt level
   hosts: mongodb
   vars_prompt:
-   COURSE: devops
-   TRAINER: swamy
-   DURATION: 110hrs
+   NAME: username
+   prompt: please enter username
+   private: false
+   PASSWORD: password
+   prompt: please enter password
+   private: true
    tasks:
-   - name: printed varible from prompt level
+   - name: printed varibles from prompt level
      ansible.builtin.debug:
-      msg: "i am learning course is {{COURSE}} and trainer is {{TRAINER}} it will take duration is {{DURATION}}"
+      msg: "username {{NAME}} password {{PASSWORD}}"
