@@ -1,0 +1,16 @@
+- name: printed varibles from tasks level
+  hosts: mongodb
+  vars:
+   COURSE: devops
+   TRAINER: swamy
+   DURATION: 110hrs
+  tasks:
+  - name: printed varibles from task level
+    ansible.builtin.debug:
+     msg: "i am learning course is {{COURSE}} trainer is {{TRAINER}} duration is {{DURATION}}"
+  - name: printed varibles add and overwrite varibles
+    vars: 
+     HOUSE: own
+    ansible.builtin.debug:
+     msg: "i am learning course is {{COURSE}} trainer is {{TRAINER}} duration is {{DURATION}} and house is {{HOUSE}}"
+
