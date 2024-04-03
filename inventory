@@ -1,3 +1,8 @@
 [mongodb]
 
 roboshop-us-dev-deb-mongodb01.swamy.cloud
+
+[mongodb=vars]
+COURSE=devops
+TRAINER=swamy
+DURATION=110hrs
